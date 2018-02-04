@@ -9,7 +9,8 @@ build_gitignore <- function(dir = getwd()) {
 
   # builds the gitignore in the given workind directory
 
-  to_ignore <- c(".Rhistory",
+  to_ignore <- c(".DS_Store",
+                 ".Rhistory",
                  ".Rprofile",
                  ".Rapp.history",
                  ".RData",

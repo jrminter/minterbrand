@@ -1,11 +1,11 @@
 /*
 minter Colors:
 dkblue = "#133463"   rgba(19, 52, 99, 1)
-atlantic = "#18303C"
+mdblue = "#365FB7"
 carbon = "#6d6f71"
 granite = "#bcbdbf"
 silver = "#e6e7e7"
-arctic = "#107D7F"
+ltBlue = "#5A7286"
 */
 
 h2 {
@@ -35,10 +35,10 @@ h2 {
 }
 */
 
-aside.gdbar {
+.gdbar {
   /*width: 400px !important;
   height: 170px !important;*/
-  background:#133463;
+  background:#5A7286;
   /*background: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #133463), color-stop(100%, #e6e6e6)) no-repeat;
   background: -webkit-linear-gradient(left, #133463, #e6e6e6) no-repeat;
   background: -moz-linear-gradient(left, #133463, #e6e6e6) no-repeat;

@@ -33,7 +33,7 @@ minter_knitr_settings()
 `r include_graphics(path.expand("./template/earth_map.jpeg"))`
 
 
-#### A report prepared by John Mintee on behalf of **YOUR NAME HERE**.
+#### A report prepared by John Minter on behalf of **YOUR NAME HERE**.
 
 ##### Pagebreak
 

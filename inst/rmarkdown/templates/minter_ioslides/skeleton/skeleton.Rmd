@@ -1,7 +1,7 @@
 ---
 title: "Untitled"
 author: "John Minter"
-date: "1/1/1901"
+date: "2018-01-01"
 output: 
   ioslides_presentation:
     logo: template/M3A-lg.png

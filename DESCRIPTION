@@ -16,5 +16,6 @@ Imports:
     ggplot2 (>= 2.2.1),
     rmarkdown (>= 1.8),
     lubridate (>= 1.7),
-    knitr (>= 1.18)
+    knitr (>= 1.18),
+    clipr (>= 0.4.0)
 RoxygenNote: 6.0.1

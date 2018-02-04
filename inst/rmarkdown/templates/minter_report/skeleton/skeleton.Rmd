@@ -1,0 +1,46 @@
+---
+params: 
+    set_title: "My Super Title"
+title: "`r params$set_title`"
+author: "J. R. Minter"
+mainfont: Roboto
+output:
+  word_document:
+      
+    reference_docx: template/mystyles.docx
+    fig_width: 6
+    fig_height: 4
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r setup, include=FALSE}
+# Load packages 
+library(minterbrand) 
+
+minter_ggplot_theme_update()
+minter_knitr_settings()
+#options(scipen = 100) #this prevents numbers from showing up in scientific notation
+
+```
+
+<br>
+
+`r include_graphics(path.expand("./template/M3A-lg.png"))`
+
+<br>
+
+`r include_graphics(path.expand("./template/earth_map.jpeg"))`
+
+
+#### A report prepared by John Mintee on behalf of **YOUR NAME HERE**.
+
+##### Pagebreak
+
+This report describes...
+
+
+##### Pagebreak
+
+
+

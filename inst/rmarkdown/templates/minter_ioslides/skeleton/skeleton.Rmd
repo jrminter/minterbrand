@@ -4,7 +4,7 @@ author: "John Minter"
 date: "2018-01-01"
 output: 
   ioslides_presentation:
-    logo: template/M3A-lg.png
+    logo: template/MA.png
     template: template/minter_ioslides.html
     css: template/minter_styles.css
 ---

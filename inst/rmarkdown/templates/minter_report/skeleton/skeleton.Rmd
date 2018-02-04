@@ -26,7 +26,7 @@ minter_knitr_settings()
 
 <br>
 
-`r include_graphics(path.expand("./template/M3A-lg.png"))`
+`r include_graphics(path.expand("./template/MA.png"))`
 
 <br>
 

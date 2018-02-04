@@ -25,7 +25,7 @@ h2 {
 
 
 /* This is how you customize the logo bar on the title slide */
-/*
+
 .gdbar img {
  width: 85px;
  height: 85px;
@@ -33,7 +33,7 @@ h2 {
  right: 0;
  margin: 8px 15px;
 }
-*/
+
 
 aside.gdbar {
   /*width: 400px !important;

@@ -1,0 +1,4 @@
+name: minterbrand - PDF Report
+description: >
+  Template for rmarkdown PDF report.
+create_dir: true

@@ -79,6 +79,21 @@ summary(cars)
 plot(pressure)
 ```
 
+
+## Slide with ggplot
+
+```{r ggPressure}
+plt <- ggplot(pressure, aes(x=temperature)) +
+              geom_point(aes(y=pressure)) +
+              geom_line(aes(x=temperature,
+                            y=pressure),
+                        color = 'blue') +
+              ggtitle("Pressure as f(temperature)")
+              theme(axis.text=element_text(size=12),
+                    axis.title=element_text(size=14),
+                    plot.title = element_text(hjust = 0.5)) # center the title
+```
+
 ## Slide with ordered list
 
 1. AA

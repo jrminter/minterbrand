@@ -25,6 +25,31 @@ minter_knitr_settings <- function(verbose = F) {
 
 }
 
+#' Draft a minterbrand HTML Report
+#' @description Drafts a new minterbrand HTMLrmarkdown report
+#' @param file File name for the draft
+#' @examples
+#' minter_draft_html_report("myReport.Rmd")
+#' @export
+minter_draft_html_report <- function(file) {
+  if(dirname(file) == ".") { #If path wasn't provided, place assume the working directory is the base dir and create subdir for markdown file.
+    message("Directory not provided. Using working directory.")
+    file <- file.path(getwd(), file)
+  }
+
+  if(tools::file_ext(file) != "Rmd") { #Fix the capitalization of Rmd
+    message("Setting file extension to .Rmd")
+    file <- paste0(tools::file_path_sans_ext(file), ".Rmd")
+  }
+
+  rmarkdown::draft(file = file,
+                   template = "minter_html_report",
+                   package = "minterbrand",
+                   edit = F)
+
+  file.edit(file.path(tools::file_path_sans_ext(file), basename(file)))
+}
+
 
 #' Draft a minterbrand Report
 #' @description Drafts a new minterbrand full rmarkdown report

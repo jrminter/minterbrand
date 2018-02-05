@@ -1,0 +1,4 @@
+name: minterbrand - HTML Report
+description: >
+  Template for rmarkdown HTML report.
+create_dir: true

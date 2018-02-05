@@ -1,7 +1,7 @@
 Package: minterbrand
 Type: Package
 Title: minterbrand R package
-Version: 0.0.1.2
+Version: 0.0.2
 Authors@R: person("Minter", "John", email= "jrminter@gmail.com", role = c("aut", "cre"))
 Maintainer: John Minter <jrminter@gmail.com>
 Description: Package with custom functions used by jrminter. Adapted from sorensenimpact.

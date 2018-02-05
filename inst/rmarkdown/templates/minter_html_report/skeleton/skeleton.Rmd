@@ -1,0 +1,67 @@
+---
+title: "An Important Analysis"
+author: "J. R. Minter"
+date: "Started 2018-01-01, Last Modified: 2018-01-02"
+abstract: |
+  Write an abstract for the report. We can talk about Al^3+^. We can 
+  also extend to use multiple lines.
+
+output:
+  html_document:
+    csl: template/american-chemical-society-with-titles-sentence-case-doi.csl
+    css: template/minter-gray-vignette.css
+    toc: true
+    number_sections: yes
+bibliography: template/rept.bib
+---
+
+<script>
+   $(document).ready(function() {
+     $head = $('#header');
+     $head.prepend('<img src=\"./template/MA.png\" style=\"float: left;width: 110px;\"/>')
+   });
+</script>
+
+```{r setup, include=FALSE}
+# Load packages 
+library(minterbrand)
+library(tidyverse)
+
+minter_ggplot_theme_update()
+minter_knitr_settings()
+#options(scipen = 100) #this prevents numbers from showing up in scientific notation
+
+```
+
+# Introduction
+
+This is a reproducible report using the ideas of [@Knuth1984b] using
+the R language (see [@r-project]) and R-markdown [@rmarkdown] ...
+
+# Objective
+
+# Results
+
+Let's plot a graph
+
+```{r ggPressure}
+plt <- ggplot(pressure, aes(x=temperature)) +
+              geom_point(aes(y=pressure)) +
+              geom_line(aes(x=temperature,
+                            y=pressure),
+                        color = 'blue') +
+              ggtitle("Pressure as f(temperature)") +
+              theme(axis.text=element_text(size=12),
+                    axis.title=element_text(size=14),
+                    plot.title = element_text(hjust = 0.5)) # center the title
+
+print(plt)
+```
+
+
+
+
+# References
+
+
+

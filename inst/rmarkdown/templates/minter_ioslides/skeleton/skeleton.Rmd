@@ -1,12 +1,12 @@
 ---
-title: "Untitled"
-author: "John Minter"
+title: "A reasonable length title that may break lines"
+author: "John Minter (jrminter@gmail.com)"
 date: "2018-01-01"
 output: 
   ioslides_presentation:
     logo: template/MA.png
-    template: template/minter_ioslides.html
     css: template/minter_styles.css
+    wide: true
 ---
 
 ```{r setup, include=FALSE}
@@ -44,13 +44,28 @@ minter_ggplot_theme_update()
 
 ## R Markdown
 
-Text goes here.
+<div class="notes">
+These are **Presenter Notes**.
 
-## Slide with Bullets
+- They can contain markdown
+- Check out **RStudio's**  [tips](http://rmarkdown.rstudio.com/ioslides_presentation_format.html)
+
+</div>
+
+
+Slide text goes here.
+
+## 2 Column Slide with Image and Bullets
+
+<div class="columns-2">
+
+![](template/MA.png)
 
 - Bullet 1
 - Bullet 2
 - Bullet 3
+
+</div>
 
 ## Slide with R Output
 
@@ -63,6 +78,13 @@ summary(cars)
 ```{r pressure}
 plot(pressure)
 ```
+
+## Slide with ordered list
+
+1. AA
+
+2. BB
+
 
 ## Slide with Columns
 <div class="column-3-left">

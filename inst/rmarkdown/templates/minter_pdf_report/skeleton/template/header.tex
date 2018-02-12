@@ -1,0 +1,28 @@
+\usepackage[usenames,dvipsnames]{xcolor}
+\definecolor{darkred}{RGB}{204,0,0}
+\definecolor{darkyellow}{RGB}{255,204,0}
+\usepackage{titlesec}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\setlength\headheight{28pt}
+\fancyhead[L]{\includegraphics[width=1cm]{template/MA.png}}
+\titleformat{\title}
+{\color{darkred}\normalfont\LARGE\bfseries}
+{\color{darkred}\thesection}{1em}{}
+\titleformat{\section}
+{\color{darkred}\normalfont\Large\bfseries}
+{\color{darkred}\thesection}{1em}{}
+\titleformat{\subsection}
+{\color{darkred}\normalfont\Large\bfseries}
+{\color{darkred}\thesubsection}{1em}{}
+\setlength\headheight{28pt}
+
+\usepackage{titling}
+
+\pretitle{%
+  \begin{center}
+  \LARGE
+  \includegraphics[width=3in]{template/MA-wide.png}\\[\bigskipamount]
+}
+\posttitle{\end{center}}

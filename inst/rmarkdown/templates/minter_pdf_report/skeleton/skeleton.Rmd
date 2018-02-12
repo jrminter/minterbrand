@@ -1,27 +1,4 @@
 ---
-# SEE https://stackoverflow.com/questions/42916124/not-able-to-use-titlesec-with-markdown-and-pandoc
-subparagraph: yes
-header-includes: 
-   \usepackage[usenames,dvipsnames]{xcolor}
-   \definecolor{darkred}{RGB}{204,0,0}
-   \definecolor{darkyellow}{RGB}{255,204,0}
-   \usepackage{titlesec}
-   \usepackage{graphicx}
-   \usepackage{fancyhdr}
-   \pagestyle{fancy}
-   \setlength\headheight{28pt}
-   \fancyhead[L]{\includegraphics[width=1cm]{template/MA.png}}
-   \titleformat{\title}
-   {\color{darkred}\normalfont\LARGE\bfseries}
-   {\color{darkred}\thesection}{1em}{}
-   \titleformat{\section}
-   {\color{darkred}\normalfont\Large\bfseries}
-   {\color{darkred}\thesection}{1em}{}
-   \titleformat{\subsection}
-   {\color{darkred}\normalfont\Large\bfseries}
-   {\color{darkred}\thesubsection}{1em}{}
-   
-   
 title: "An Important Analysis"
 author: "J. R. Minter"
 date: "Started 2018-01-01, Last Modified: 2018-01-02"
@@ -32,6 +9,7 @@ abstract: |
 bibliography: template/rept.bib
 geometry: margin=1in
 fontsize: 12pt
+subparagraph: yes
 
 output:
   pdf_document:
@@ -39,6 +17,9 @@ output:
     highlight: tango
     number_sections: yes
     latex_engine: pdflatex
+    includes:
+      in_header: template/header.tex
+    
 ---
 
 ```{r setup, include=FALSE}

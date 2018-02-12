@@ -18,7 +18,7 @@ slides > slide.title-slide hgroup h1 {
   font-size: 42pt;
   color: #cc0000;
   position: fixed;
-  top: 50%;
+  top: 55%;
   left: 50%;
   transform: translate(-50%, -50%);
   width:75%;
@@ -45,22 +45,39 @@ h2 {
 
 }
 
-
-/* This is how you customize the logo bar on the title slide */
-
 .gdbar img {
- width: 85px;
- height: 85px;
- position: absolute;
- right: 0;
- margin: 8px 15px;
+  width: 599px !important;
+  height: 150px !important;
+  margin: 8px 8px;
+}
+
+.gdbar {
+  width: 640px !important;
+  height: 170px !important;
 }
 
 
+/* This is how you customize the logo bar on the title slide 
+
+.gdbar img {
+  /*
+ width: 599px;
+ height: 150px;
+ position: absolute;
+ right: 0;
+ margin: 8px 15px;
+  width: 150px;
+  height: 38px;
+  background-size: 180px 42px;
+}
+*/
+
+
 aside.gdbar {
-  /*width: 400px !important;
-  height: 170px !important;*/
+  width: 300px ;
+  height:100px ;
   background:#5A7286;
+
   /*background: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #133463), color-stop(100%, #e6e6e6)) no-repeat;
   background: -webkit-linear-gradient(left, #133463, #e6e6e6) no-repeat;
   background: -moz-linear-gradient(left, #133463, #e6e6e6) no-repeat;
@@ -70,9 +87,9 @@ aside.gdbar {
 
 /* This is for the content slides */
 slides > slide:not(.nobackground):before {
-  width: 60px;
-  height: 60px;
-  background-size: 60px 60px;
+  width: 150px;
+  height: 38px;
+  background-size: 180px 42px;
 }
 
 /* These are div styles for multi-column layouts */

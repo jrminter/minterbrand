@@ -4,7 +4,7 @@ author: "John Minter (jrminter@gmail.com)"
 date: "2018-01-01"
 output: 
   ioslides_presentation:
-    logo: template/MA.png
+    logo: template/MA-wide.png
     css: template/minter_styles.css
     wide: true
 ---
@@ -32,7 +32,7 @@ minter_ggplot_theme_update()
     position: absolute;
     margin-left: auto;
     margin-right: auto;
-    left: 140px;  /* This will not obscure the footer image */
+    left: 250px;  /* This will not obscure the footer image */
     right: 0;
     text-align:left;
     bottom: 20px;
@@ -59,7 +59,10 @@ Slide text goes here.
 
 <div class="columns-2">
 
-![](template/MA.png)
+```{r echo=FALSE, out.width='100%',fig.cap="My Figure Caption"}
+knitr::include_graphics('template/MA-wide.png')
+```
+
 
 - Bullet 1
 - Bullet 2
